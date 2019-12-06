@@ -43,7 +43,6 @@ $ curl -X GET http://127.0.0.1:5000/v2/mfi-project/tags/list
  {"name":"mfi-project","tags":["jenkins-MFI-project-pipeline-1"]}
 ```
 6. Modify the **MFI-project `Dockerfile`** and push your changes
-> Note: You can use the user **`picebor951`** and the password I gave you in my mail.  
 > Once the push done, the **`MFI-project-pipeline`** should start shortly.  
 
 7. Now check the Docker registry content again:
@@ -62,9 +61,10 @@ $ docker run -it mfi-project:jenkins-MFI-project-pipeline-<buildId>
 
 
 #
-_I don't feel I did miracles on this, but at least I spent some good time to learn and implement Docker technology which is quite new for me._ :+1:
-_I hope I did it clearly_ :thinking: _and that we will have the occasion to meet each other to have feedbacks on this.
-Thanks and regards,
-Sophie P._
+_I don't feel I did miracles on this, but at least I spent some good time to learn and implement Docker technology which is quite new for me._ :+1:  
+_I hope I did it clearly_ :thinking: _and that we will have the occasion to meet each other to have feedbacks on this.  
+Thanks and regards,  
+Sophie P._  
+
 
 
