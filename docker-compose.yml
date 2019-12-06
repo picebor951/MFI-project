@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  jenkins:
+    build: JenkinsCI-img 
+    ports:
+      - 8080:8080
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ${PROJECT_VOLUME:-.}:/home/project
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+  registry:
+    restart: always
+    image: registry:2
+    ports:
+      - 5000:5000
+    volumes:
+      - ./registry-config/simple.yml:/etc/docker/registry/config.yml
+volumes:
+  jenkins_home:

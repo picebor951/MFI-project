@@ -1,0 +1,6 @@
+[metwork_stable]
+name=MetWork Stable
+baseurl=http://metwork-framework.org/pub/metwork/releases/rpms/stable/centos7/
+gpgcheck=0
+enabled=1
+metadata_expire=0
